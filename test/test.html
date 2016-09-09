@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ymdate测试用例</title>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="../index.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/ui-default.css"/>
+</head>
+<body>
+<input type="text" name="ymdate" id="ymdate" />
+<script type="text/javascript">
+$( function(){
+    $("#ymdate").ymdate( {
+        uptonow: true ,
+        onpicked: function( value ){
+            console.log( value );
+            console.log( $("#ymdate")[0]._ymdate ) ;
+            console.log( $("#ymdate")[0]._ymdate.config ) ;
+            $("#ymdate")[0]._ymdate.config.max = '2015-02' ;
+            $("#ymdate")[0]._ymdate.config.min = '2014-02' ;
+        }
+    } ) ;
+} ) ;
+</script>
+</body>
+</html>

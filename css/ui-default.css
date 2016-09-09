@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* ymdate时间选择 */
+.ymdate_layer { height: 160px; width: 244px; background-color: #fff; font-size: 14px; z-index: 999; border: 1px solid #e7e7e7; border-radius: 3px; box-shadow: 2px 2px 4px #e7e7e7; -webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none; }
+.ymdate_layer ul , .ymdate_layer li { list-style: none; padding: 0; margin: 0; }
+.ymdate_layer .ymdate_year { float: left; width: 90px; height: 160px; overflow: auto; }
+.ymdate_layer .ymdate_year li { width: 72px; height: 32px; cursor: pointer; line-height: 32px; background-color: #fff; color: #333; text-align: center; }
+.ymdate_layer .ymdate_year li:hover { background-color: #f4f4f4 !important; color: #333 !important; }
+.ymdate_layer .ymdate_year li.active { background-color: #4ed6b7 !important; color: #fff !important; }
+.ymdate_layer .ymdate_year li.disable { background-color: #fff !important; color: silver !important; }
+.ymdate_layer .ymdate_month { float: left; width: 136px; padding: 16px 0px 15px 15px; word-wrap: normal; background-color: #fff; }
+.ymdate_layer .ymdate_month li { float: left; cursor: pointer; width: 33%; height: 22px; line-height: 22px; color: #333; background-color: #fff; margin: 0 0 10px 0; }
+.ymdate_layer .ymdate_month li span { padding: 4px 6px; border-radius: 3px; }
+.ymdate_layer .ymdate_month li.active span { background-color: #4ed6b7 !important; color: #fff !important; }
+.ymdate_layer .ymdate_month li.disable { background-color: #fff!important; }
+.ymdate_layer .ymdate_month li.disable span { color: silver!important;  }
+.ymdate_layer .ymdate_month li span:hover { background-color: #f4f4f4; color: #333; }
